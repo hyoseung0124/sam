@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Access Manager - 시스템 설명 프레젠테이션</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/white.min.css">
+    <style>
+        :root {
+            --sam-ink: #1f2a37;
+            --sam-brand: #0d6e6e;
+            --sam-brand-strong: #114a74;
+            --sam-brand-soft: rgba(13, 110, 110, 0.16);
+            --sam-accent-soft: rgba(17, 74, 116, 0.10);
+            --sam-ok-soft: rgba(11, 122, 59, 0.20);
+            --sam-warn-soft: rgba(204, 122, 0, 0.20);
+            --sam-warn-line: #c46f00;
+            --sam-line: rgba(128, 149, 168, 0.38);
+        }
+        body {
+            background:
+                radial-gradient(circle at 90% 10%, rgba(221, 239, 252, 0.55) 0%, transparent 32%),
+                radial-gradient(circle at 10% 85%, rgba(216, 240, 236, 0.52) 0%, transparent 30%),
+                #f4f7fb;
+        }
+        .reveal {
+            color: var(--sam-ink);
+        }
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none;
+            font-weight: bold;
+            color: #123a50;
+        }
+        .reveal h2 {
+            border-left: 5px solid #5bc0c0;
+            padding-left: 12px;
+            letter-spacing: -0.01em;
+        }
+        .reveal pre {
+            width: 100%;
+            font-size: 0.55em;
+        }
+        .reveal code {
+            padding: 2px 6px;
+            background: rgba(0, 0, 0, 0.06);
+            border-radius: 3px;
+        }
+        .reveal .slides {
+            text-align: left;
+        }
+        .reveal section {
+            top: 0 !important;
+        }
+        .tech-stack {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .tech-item {
+            background: var(--sam-accent-soft);
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #5bc0c0;
+            border: 1px solid var(--sam-line);
+        }
+        .tech-item h4 {
+            margin: 0 0 10px 0;
+            color: #0f5f79;
+        }
+        .tech-item ul {
+            margin: 0;
+            font-size: 0.8em;
+        }
+        .security-box {
+            background: var(--sam-ok-soft);
+            border: 2px solid #27a55a;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .warning-box {
+            background: var(--sam-warn-soft);
+            border: 2px solid var(--sam-warn-line);
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .flow-diagram {
+            font-size: 0.8em;
+            line-height: 1.8;
+            font-family: monospace;
+            background: rgba(246, 251, 255, 0.95);
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border: 1px solid var(--sam-line);
+        }
+        .comparison-table {
+            font-size: 0.75em;
+            margin: 15px 0;
+            border-collapse: collapse;
+        }
+        .comparison-table td {
+            padding: 8px;
+            border: 1px solid var(--sam-line);
+        }
+        .comparison-table th {
+            background: rgba(13, 110, 110, 0.16);
+            padding: 8px;
+            border: 1px solid var(--sam-line);
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- 슬라이드 1: 제목 -->
+            <section>
+                <h1>Server Access Manager</h1>
+                <h3>보안 기반 서버 접속 정보 관리 시스템</h3>
+                <p style="margin-top: 50px; font-size: 0.8em;">
+                    <strong>기술:</strong> React 19 + Node.js + Web Crypto API<br>
+                    <strong>배포:</strong> Windows EXE + HTTPS
+                </p>
+            </section>
+
+            <!-- 슬라이드 2: 시스템 개요 -->
+            <section>
+                <h2>📋 시스템 개요</h2>
+                <p>서버 접속 정보를 <strong>마스터키 기반 암호화</strong>로 안전하게 저장 및 관리</p>
+                
+                <div class="security-box">
+                    <strong>핵심 보안 특징:</strong>
+                    <ul>
+                        <li>✓ AES-GCM 256비트 암호화</li>
+                        <li>✓ PBKDF2 (210,000회 반복) 키 파생</li>
+                        <li>✓ 마스터키 기반 단일 인증</li>
+                        <li>✓ 로컬 오프라인 지원</li>
+                        <li>✓ 데이터 변조 감지 (GCM 인증태그)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 슬라이드 2-1: 접속정보관리 시스템 장점 -->
+            <section>
+                <h2>✅ 접속정보관리 시스템의 장점</h2>
+
+                <div class="security-box">
+                    <strong>보안 측면</strong>
+                    <ul>
+                        <li>✓ 비밀번호/접속정보를 평문이 아닌 암호문으로 저장</li>
+                        <li>✓ 데이터 변조 시 즉시 탐지 가능 (AES-GCM 인증태그)</li>
+                        <li>✓ 마스터키 기반 접근 통제로 무단 열람 위험 감소</li>
+                    </ul>
+                </div>
+
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <h4>운영 효율</h4>
+                        <ul>
+                            <li>별도 백엔드 서버 및 DB 구축/운영이 불필요</li>
+                            <li>프론트 서버 중심 운영으로 구조 단순화 및 유지보수 부담 감소</li>
+                            <li>여러 시스템 관리시 접속정보 관리 효율화</li>
+                            <li>내보내기/백업으로 운영 연속성 확보</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h4>업무 안정성</h4>
+                        <ul>
+                            <li>저장소는 사용자별 개인 관리로 책임/권한 분리</li>
+                            <li>개인 저장소 분리로 타 사용자 데이터 영향 최소화</li>
+                            <li>필요 시 각자 오프라인 단독 사용 가능 (네트워크 의존도 최소화)</li>
+                            <li>담당자 변경 시 인수인계 표준화</li>
+                            <li>오프라인 환경에서도 동일한 방식으로 사용 가능</li>
+                            <li>정형화된 구조로 휴먼에러 감소</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.85em; margin-top: 20px; color: #00d4ff;">
+                    <strong>결과:</strong> 백엔드/DB 비용 없이 공통 운영 효율과 개인 단위 책임관리를 동시에 달성
+                </p>
+            </section>
+
+            <!-- 슬라이드 3: 기술 스택 (프론트엔드) -->
+            <section>
+                <h2>🛠️ 기술 스택 - 프론트엔드</h2>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <h4>UI 프레임워크</h4>
+                        <ul>
+                            <li>React 19</li>
+                            <li>Vite 8</li>
+                            <li>MUI (Material UI)</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h4>기능 라이브러리</h4>
+                        <ul>
+                            <li>MUI X Data Grid</li>
+                            <li>React Icons</li>
+                            <li>XLSX (SheetJS)</li>
+                        </ul>
+                    </div>
+                </div>
+                <p style="font-size: 0.9em; margin-top: 30px;">
+                    <strong>개발 서버:</strong> Vite HMR + REST API 미들웨어<br>
+                    <strong>번들링:</strong> 경량화된 SPA 배포
+                </p>
+            </section>
+
+            <!-- 슬라이드 4: 기술 스택 (백엔드/보안) -->
+            <section>
+                <h2>🛠️ 기술 스택 - 백엔드 및 보안</h2>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <h4>서버</h4>
+                        <ul>
+                            <li>Node.js 내장 HTTP/HTTPS</li>
+                            <li>REST API (Express 없음)</li>
+                            <li>JSON 저장소</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h4>보안/암호화</h4>
+                        <ul>
+                            <li>Web Crypto API</li>
+                            <li>AES-GCM 256비트</li>
+                            <li>PBKDF2 + SHA-256</li>
+                            <li>HTTPS 사설 인증서</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tech-item" style="grid-column: 1 / -1;">
+                    <h4>배포</h4>
+                    <ul>
+                        <li>pkg로 Node 서버를 Windows .exe로 패키징</li>
+                        <li>배치 + PowerShell 자동화 스크립트</li>
+                        <li>오프라인 환경 지원</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 슬라이드 5: 암호화 아키텍처 -->
+            <section>
+                <h2>🔐 암호화 아키텍처</h2>
+                <div class="flow-diagram">
+                    <strong>마스터키 입력</strong><br>
+                    ↓<br>
+                    <strong>PBKDF2 키 파생</strong> (반복 210,000회)<br>
+                    • Salt: 16바이트 랜덤<br>
+                    • Hash: SHA-256<br>
+                    • Context: "password" 또는 "storage"<br>
+                    ↓<br>
+                    <strong>AES-GCM 256비트 암호화</strong><br>
+                    • IV: 12바이트 랜덤<br>
+                    • 인증태그: 변조 감지<br>
+                    ↓<br>
+                    <strong>암호문 (Base64)</strong><br>
+                    형식: enc$v={version}&c={context}&s={salt}&i={iv}&d={ciphertext}
+                </div>
+            </section>
+
+            <!-- 슬라이드 6: PBKDF2 상세 -->
+            <section>
+                <h2>🔑 PBKDF2 - 키 파생 프로세스</h2>
+                <p><strong>반복 횟수: 210,000회</strong></p>
+                
+                <div class="flow-diagram">
+                    반복 1회: HASH(마스터키 + salt) → 결과1<br>
+                    반복 2회: HASH(결과1 + salt) → 결과2<br>
+                    ...<br>
+                    반복 210,000회: HASH(결과99999 + salt) → 최종 키
+                </div>
+
+                <div class="security-box">
+                    <strong>왜 반복을 많이 할까?</strong>
+                    <ul>
+                        <li>정상 사용자: 0.2초 (무방함)</li>
+                        <li>해커 사전공격: 1억 개 비밀번호 × 210,000회 = <strong>6,300년</strong> 소요</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 슬라이드 7: AES-GCM vs AES -->
+            <section>
+                <h2>🔒 AES vs AES-GCM 비교</h2>
+                <table class="comparison-table">
+                    <tr>
+                        <th style="width: 25%;">항목</th>
+                        <th style="width: 37.5%;">AES</th>
+                        <th style="width: 37.5%;">AES-GCM</th>
+                    </tr>
+                    <tr>
+                        <td><strong>기능</strong></td>
+                        <td>암호화만</td>
+                        <td><strong>암호화 + 무결성 검증</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>변조 감지</strong></td>
+                        <td>❌ 불가능</td>
+                        <td>✓ 인증태그로 감지</td>
+                    </tr>
+                    <tr>
+                        <td><strong>안전성</strong></td>
+                        <td>기본</td>
+                        <td><strong>고급 (권장)</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>사용처</strong></td>
+                        <td>일반 암호화</td>
+                        <td><strong>TLS, HTTPS, 현대 표준</strong></td>
+                    </tr>
+                </table>
+
+                <p style="margin-top: 20px; font-size: 0.85em;">
+                    💡 <strong>현재 프로젝트:</strong> AES-GCM 사용으로 데이터 변조 방지
+                </p>
+            </section>
+
+            <!-- 슬라이드 8: 저장소 구조 -->
+            <section>
+                <h2>📦 저장소 암호화 구조</h2>
+                
+                <div class="flow-diagram" style="font-size: 0.75em;">
+                    <strong>저장소 (context=storage로 암호화)</strong><br>
+                    ├─ 마스터키 입력<br>
+                    ├─ PBKDF2 키 파생<br>
+                    ├─ AES-GCM 복호화<br>
+                    └─ items[] 배열 복원<br>
+                    &nbsp;&nbsp;&nbsp;├─ [항목 1]<br>
+                    &nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;├─ host<br>
+                    &nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;├─ port<br>
+                    &nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;└─ password (context=password로 추가 암호화)<br>
+                    &nbsp;&nbsp;&nbsp;├─ [항목 2]<br>
+                    &nbsp;&nbsp;&nbsp;└─ [항목 N]
+                </div>
+
+                <div class="warning-box">
+                    <strong>⚠️ 2단계 암호화:</strong>
+                    <ul>
+                        <li>1단계: 저장소 전체 (context=storage)</li>
+                        <li>2단계: 개별 비밀번호 필드 (context=password)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 슬라이드 9: 보안 흐름 -->
+            <section>
+                <h2>🔑 보안 흐름</h2>
+                
+                <h4 style="margin-top: 30px;">암호화 프로세스</h4>
+                <div class="flow-diagram" style="font-size: 0.8em;">
+                    사용자 입력 → 비밀번호 암호화 (context=password)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                    저장소 배열 JSON → 저장소 암호화 (context=storage)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                    server-access-items.json 파일 저장
+                </div>
+
+                <h4>복호화 프로세스</h4>
+                <div class="flow-diagram" style="font-size: 0.8em;">
+                    파일 읽음 → enc$ 확인 → context 파싱<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                    마스터키 + salt + context로 PBKDF2 키 파생<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                    AES-GCM 복호화 (인증태그 검증 포함)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                    성공 = 마스터키 정상 / 실패 = 마스터키 오류 또는 데이터 손상
+                </div>
+            </section>
+
+            <!-- 슬라이드 10: 파일 유출 시나리오 -->
+            <section>
+                <h2>🚨 파일 유출 시나리오</h2>
+                
+                <div class="warning-box">
+                    <strong>상황:</strong> server-access-items.json 파일이 유출됨
+                </div>
+
+                <h4 style="margin-top: 30px;">비밀번호 탈취 절차</h4>
+                <div class="flow-diagram" style="font-size: 0.8em;">
+                    <strong>단계 1: 저장소 복호화 (마스터키 필요)</strong><br>
+                    enc$ → context=storage 데이터 → PBKDF2 키 파생<br>
+                    → AES-GCM 복호화 → items[] 배열 획득<br>
+                    <br>
+                    <strong>단계 2: 비밀번호 복호화 (마스터키 필요)</strong><br>
+                    각 항목의 password 필드 → context=password 데이터<br>
+                    → PBKDF2 키 파생 → AES-GCM 복호화 → 비밀번호 획득
+                </div>
+
+                <div class="security-box">
+                    <strong>✓ 결론:</strong> 마스터키 없으면 모든 데이터 무의미<br>
+                    <strong>✓ 핵심:</strong> 마스터키 하나만 보호되면 모든 데이터 안전
+                </div>
+            </section>
+
+            <!-- 슬라이드 11: 인코딩 vs 암호화 -->
+            <section>
+                <h2>📝 인코딩 vs 암호화</h2>
+                
+                <table class="comparison-table">
+                    <tr>
+                        <th style="width: 25%;">구분</th>
+                        <th style="width: 37.5%;">인코딩</th>
+                        <th style="width: 37.5%;">암호화</th>
+                    </tr>
+                    <tr>
+                        <td><strong>목적</strong></td>
+                        <td>형식 변환</td>
+                        <td><strong>데이터 보호</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>누가 해제</strong></td>
+                        <td>누구나</td>
+                        <td><strong>비밀번호 아는 사람만</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>보안</strong></td>
+                        <td>❌ 무관</td>
+                        <td>✓ 핵심</td>
+                    </tr>
+                    <tr>
+                        <td><strong>예</strong></td>
+                        <td>Base64, UTF-8, Hex</td>
+                        <td><strong>AES-GCM, PBKDF2</strong></td>
+                    </tr>
+                </table>
+
+                <div class="security-box" style="margin-top: 30px;">
+                    <strong>💡 현재 프로젝트:</strong><br>
+                    salt, IV, ciphertext를 JSON 저장을 위해 Base64 인코딩<br>
+                    하지만 실제 보안은 AES-GCM 암호화가 담당
+                </div>
+            </section>
+
+            <!-- 슬라이드 12: Context 분리 -->
+            <section>
+                <h2>🔐 Context 분리의 중요성</h2>
+                
+                <p>같은 마스터키라도 <strong>context를 다르게</strong> 사용해 논리적 분리</p>
+
+                <div class="flow-diagram" style="font-size: 0.8em; margin: 20px 0;">
+                    <strong>Password Context</strong><br>
+                    마스터키 + "password" + salt<br>
+                    → 파생 키 A<br>
+                    <br>
+                    <strong>Storage Context</strong><br>
+                    마스터키 + "storage" + salt<br>
+                    → 파생 키 B (다름!)<br>
+                </div>
+
+                <div class="security-box">
+                    <strong>✓ 장점:</strong>
+                    <ul>
+                        <li>같은 키도 context가 다르면 다른 암호화 키 생성</li>
+                        <li>한 가지 암호화가 깨져도 다른 것은 안전</li>
+                        <li>데이터 용도별 독립적 보안</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 슬라이드 13: 사용 명령어 -->
+            <section>
+                <h2>⚙️ 사용 명령어</h2>
+                <h4>서버 제어</h4>
+                <pre><code>npm run stop:server        # 서버 종료
+npm run restart:https      # HTTPS 재시작
+npm run start:https        # HTTPS 시작</code></pre>
+
+                <h4>인증서 관리</h4>
+                <pre><code>npm run cert:generate:internal  # 인증서 재생성
+npm run cert:trust:internal     # 루트 인증서 신뢰</code></pre>
+
+                <h4>배포</h4>
+                <pre><code>prepare-offline-exe-package.bat  # EXE 패키징</code></pre>
+            </section>
+
+            <!-- 슬라이드 14: 배포 방식 -->
+            <section>
+                <h2>📦 배포 방식</h2>
+                
+                <div class="flow-diagram" style="font-size: 0.8em;">
+                    <strong>개발 환경 (빌드 PC)</strong><br>
+                    npm install → npm run build<br>
+                    ↓<br>
+                    <strong>prepare-offline-exe-package.bat 실행</strong><br>
+                    (pkg로 Node 서버 패키징)<br>
+                    ↓<br>
+                    <strong>offline-exe 폴더 생성</strong><br>
+                    (dist + exe + 인증서 포함)<br>
+                    ↓<br>
+                    <strong>USB/네트워크로 배포</strong><br>
+                    ↓<br>
+                    <strong>오프라인 PC에서 실행</strong><br>
+                    run-server-access-manager-exe.bat 더블클릭
+                </div>
+            </section>
+
+            <!-- 슬라이드 15: 오프라인 vs 온라인 -->
+            <section>
+                <h2>🌐 오프라인 vs 온라인 모드</h2>
+                
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <h4>오프라인 모드</h4>
+                        <ul>
+                            <li>로컬 전용</li>
+                            <li>기본 HTTP</li>
+                            <li>인증서 불필요</li>
+                            <li>Port: 4173</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h4>온라인 모드</h4>
+                        <ul>
+                            <li>네트워크 접속</li>
+                            <li>HTTPS 권장</li>
+                            <li>사설 인증서</li>
+                            <li>Port: 4173</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4 style="margin-top: 30px;">실행</h4>
+                <pre><code># 기본 (HTTP)
+run-server-access-manager-exe.bat
+
+# HTTPS 활성화
+run-server-access-manager-exe.bat --https</code></pre>
+            </section>
+
+            <!-- 슬라이드 16: 주요 파일 구조 -->
+            <section>
+                <h2>📂 주요 파일 구조</h2>
+                
+                <pre style="font-size: 0.6em;"><code>server-access-manager/
+├── src/
+│   ├── App.jsx          (암호화 로직 + UI)
+│   ├── main.jsx
+│   └── index.css
+├── local-file-server.mjs     (Node.js REST API)
+├── vite.config.js            (개발 서버)
+├── package.json              (의존성)
+├── data/
+│   └── server-access-items.json  (암호화된 데이터)
+├── .certs/
+│   ├── sam-root-ca.cer       (루트 인증서)
+│   └── sam-server.pfx        (서버 인증서)
+└── offline-exe/
+    └── run-server-access-manager-exe.bat</code></pre>
+            </section>
+
+            <!-- 슬라이드 17: 보안 최적화 포인트 -->
+            <section>
+                <h2>🎯 보안 최적화 포인트</h2>
+                
+                <div class="security-box">
+                    <strong>강점:</strong>
+                    <ul>
+                        <li>✓ PBKDF2 210,000회 반복 (사전공격 방지)</li>
+                        <li>✓ AES-GCM 256비트 (변조 감지)</li>
+                        <li>✓ 랜덤 Salt + IV (패턴 반복 방지)</li>
+                        <li>✓ Context 분리 (데이터 용도별 독립)</li>
+                        <li>✓ 오프라인 지원 (네트워크 노출 최소)</li>
+                    </ul>
+                </div>
+
+                <div class="warning-box">
+                    <strong>주의사항:</strong>
+                    <ul>
+                        <li>⚠ 마스터키는 사용자가 안전하게 관리해야 함</li>
+                        <li>⚠ HTTPS 사용 시 사설 인증서 신뢰 필요</li>
+                        <li>⚠ 로컬 파일 시스템 접근 권한 관리 필요</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 슬라이드 18: 결론 -->
+            <section>
+                <h1>✨ 결론</h1>
+                
+                <div class="security-box" style="margin: 40px 0;">
+                    <strong>Server Access Manager는 다층 보안 구조로</strong><br>
+                    서버 접속 정보를 안전하게 저장하고 관리하는 시스템입니다.
+                </div>
+
+                <h3 style="color: #00d4ff;">핵심 요소</h3>
+                <ul style="font-size: 0.9em;">
+                    <li><strong>마스터키:</strong> 모든 암호화의 기초</li>
+                    <li><strong>PBKDF2:</strong> 키 파생 보안 (사전공격 방지)</li>
+                    <li><strong>AES-GCM:</strong> 암호화 + 무결성 검증</li>
+                    <li><strong>Context 분리:</strong> 데이터 용도별 독립 보안</li>
+                    <li><strong>오프라인 배포:</strong> 네트워크 위험 최소화</li>
+                </ul>
+
+                <p style="margin-top: 50px; font-size: 0.85em; color: #00d4ff;">
+                    <strong>마스터키 하나만 안전하면, 모든 데이터가 보호됩니다.</strong>
+                </p>
+            </section>
+
+            <!-- 슬라이드 19: Q&A -->
+            <section>
+                <h1>❓ 질문과 답변</h1>
+                <p style="margin-top: 80px; font-size: 1.2em; color: #00d4ff;">
+                    <strong>감사합니다!</strong>
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide',
+            backgroundTransition: 'fade',
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+            width: '100%',
+            height: '100%',
+            margin: 0.1,
+            minScale: 0.2,
+            maxScale: 2.0
+        });
+    </script>
+</body>
+</html>

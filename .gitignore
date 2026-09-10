@@ -1,0 +1,7 @@
+.vercel
+.env*
+*.zip
+*.json
+*.ps1
+.runtime
+node_modules

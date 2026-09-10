@@ -1,0 +1,240 @@
+C:\Users\yhseung\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
+
+
+사용 명령:
+
+서버 종료
+npm run stop:server
+HTTPS 서버 재시작(기존 프로세스 종료 후 바로 시작)
+npm run restart:https
+HTTPS 서버 시작
+npm run start:https
+
+
+서버 중지
+npm run stop:server
+
+서버 PC에서 인증서 재생성
+npm run cert:generate:internal
+이 명령이 .certs/sam-root-ca.cer, .certs/sam-server.pfx를 새로 만듭니다.
+
+클라이언트 PC들에서 루트 인증서 재신뢰
+npm run cert:trust:internal
+주의: 루트 CA까지 새로 바뀌므로 접속하는 모든 PC에서 다시 설치해줘야 합니다.
+
+HTTPS 서버 재시작
+npm run start:https
+또는 한 번에
+npm run restart:https
+
+
+
+배포 파일 만들기 (빌드 PC, 인터넷 가능 PC)
+
+작업 폴더로 이동: c:/dev/server-access-manager
+
+아래 파일 실행: dev/server-access-manager/prepare-offline-exe-package.bat
+
+완료되면 아래 폴더가 생성됨: dev/server-access-manager/offline-exe
+
+오프라인 PC로 전달
+
+dev/server-access-manager/offline-exe 폴더 전체를 그대로 복사
+
+
+오프라인 PC에서 실행 (로컬 전용 기본 모드)
+
+dev/server-access-manager/offline-exe/run-server-access-manager-exe.bat 더블클릭
+
+브라우저에서 접속: http://127.0.0.1:4173
+
+지금은 기본이 HTTP라서 인증서 작업 없이 바로 사용 가능
+
+HTTPS가 필요할 때만
+
+실행 인자에 --https를 붙여 실행
+
+offline-exe 안에 .certs/sam-server.pfx가 있어야 동작
+
+재배포 방법 (소스 수정 후)
+
+빌드 PC에서 다시 dev/server-access-manager/prepare-offline-exe-package.bat 실행
+
+새로 만들어진 dev/server-access-manager/offline-exe 전체를 교체 배포
+
+
+
+포트 점유 확인: netstat -ano | findstr :4173
+남아있으면 정리: npm run stop:server
+
+
+
+
+
+이 사이트(프로젝트)에 적용된 기술 스택을 정리하면 아래와 같습니다.
+
+프론트엔드
+
+React 19: UI 구성 및 상태 관리
+package.json
+Vite 8 + @vitejs/plugin-react: 개발 서버/번들링
+package.json, vite.config.js
+MUI(Material UI) + MUI X Data Grid: 테이블/툴팁 등 컴포넌트
+package.json, App.jsx
+React Icons: 아이콘 UI
+App.jsx
+XLSX(SheetJS): 엑셀 가져오기/내보내기
+package.json, App.jsx
+백엔드/서버
+
+Node.js 내장 HTTP/HTTPS 서버(Express 없이 직접 구현)
+local-file-server.mjs
+REST API 직접 구현: /api/items, /api/offline-exe-download, /api/offline-exe-meta 등
+local-file-server.mjs
+개발 모드에서도 Vite middleware로 동일 API 제공
+vite.config.js
+데이터 저장
+
+로컬 JSON 파일 저장소(server-access-items.json)
+local-file-server.mjs, vite.config.js
+프론트에서 File System Access API + IndexedDB로 로컬 폴더 핸들 유지/접근
+App.jsx
+보안/암호화
+
+Web Crypto API 기반 AES-GCM 암호화 + PBKDF2(SHA-256) 키 파생
+App.jsx
+비밀번호/저장소 데이터 암복호화 로직 내장
+App.jsx
+HTTPS 실행 및 사설 인증서(PFX) 사용 지원
+package.json, local-file-server.mjs
+오프라인 배포
+
+pkg로 Node 서버를 Windows exe로 패키징
+package.json, prepare-offline-exe-package.bat
+배치(.bat) + PowerShell 스크립트로 빌드/압축/서버제어/인증서 관리 자동화
+prepare-offline-exe-package.bat, package.json
+
+
+
+
+키 유도 방식
+입력한 마스터키를 바로 AES 키로 쓰지 않고, PBKDF2로 파생합니다.
+반복 횟수 210000, 해시 SHA-256, 결과는 AES-GCM 256비트 키입니다.
+구현: App.jsx:89-111
+반복 횟수 상수: App.jsx:47
+암호화 포맷
+암호문 문자열은 항상 enc$ 접두어를 붙입니다.
+내부 payload는 v, c, s, i, d 필드를 가집니다.
+의미:
+v: 버전
+c: context (password 또는 storage)
+s: salt (Base64)
+i: iv (Base64)
+d: ciphertext (Base64)
+구현: App.jsx:113-134
+복호화 방식
+enc$ 확인 후 payload를 파싱하고,
+같은 마스터키(+context)로 다시 PBKDF2 키를 만들어 AES-GCM 복호화합니다.
+구현: App.jsx:136-152
+레거시 호환(컨텍스트 없는 과거 데이터도 시도): App.jsx:154-169
+비밀번호 필드 암호화
+개별 접속정보 비밀번호는 context=password로 암호화됩니다.
+저장 직전 암호화: App.jsx:992-1016
+래퍼 함수: App.jsx:171-176, App.jsx:178-183
+전체 저장소 암호화
+items 배열 전체를 JSON 문자열로 만든 뒤 context=storage로 암호화해서 저장합니다.
+저장 payload 생성: App.jsx:518-523
+자동 저장(useEffect): App.jsx:678-710
+로드 시 복호화 후 배열로 복원: App.jsx:530-557
+왜 password와 storage를 분리하나
+같은 마스터키라도 context를 다르게 넣어서 키 파생 입력이 달라집니다.
+즉 password 데이터용 키와 storage 데이터용 키가 논리적으로 분리됩니다.
+키 소스 생성 부분: App.jsx:116, App.jsx:148
+한 줄 요약
+
+마스터키 1개를 기반으로 PBKDF2 + AES-GCM을 사용하고, password/storage 컨텍스트를 분리해 암호화하는 구조입니다.
+
+
+키 생성(PBKDF2) 단계에 넣는 랜덤 값
+같은 마스터키라도 salt가 다르면 파생 키가 달라짐
+목적: 사전공격/레인보우테이블 공격을 어렵게 만들기
+IV (nonce)
+AES-GCM 암호화 실행 시 넣는 랜덤 값
+같은 키 + 같은 평문이라도 IV가 다르면 암호문이 달라짐
+목적: 암호문 패턴 반복 방지, GCM 안전성 보장
+
+
+
+저장된 값에서 c, s, i, d를 읽음
+사용자가 입력한 마스터키 + c + s로 PBKDF2 키를 다시 만듦
+그 키와 i로 d를 AES-GCM 복호화 시도
+복호화가 성공하면 마스터키가 맞는 것
+실패하면(인증 태그 검증 실패) 마스터키가 틀린 것
+
+
+암호화: (마스터키:context) + 랜덤 salt + 고정 파라미터
+복호화: (마스터키:context) + payload salt + 같은 고정 파라미터
+
+
+
+이걸 210000번
+마스터키: "mypassword123"
+salt: "randomvalue"
+
+반복 1회:
+해시(마스터키 + salt) → 결과1
+
+반복 2회:
+해시(결과1 + salt) → 결과2
+
+
+저장소 데이터 (context=storage로 암호화)
+└─ 마스터키 필요
+   └─ items 배열 전체 복호화 가능
+      └─ 각 항목의 개별 비밀번호 필드 (context=password로 암호화)
+         └─ 마스터키 필요
+            └─ 비밀번호 복호화 가능
+
+
+1단계: 저장소 복호화 (마스터키 필요)
+파일 읽음 → enc$ 확인 → context=storage 데이터 발견
+→ 마스터키 + salt + context로 키 파생 (PBKDF2 210000회)
+→ AES-GCM으로 items 배열 복호화 ✓
+
+2단계: 개별 비밀번호 복호화 (마스터키 필요)
+각 항목에서 password 필드 발견 → enc$ 확인 → context=password 데이터 발견
+→ 마스터키 + salt + context로 키 파생 (PBKDF2 210000회)
+→ AES-GCM으로 비밀번호 복호화 ✓            
+
+
+ 브라우저 내장 Web Crypto API
+PBKDF2 - 국제 표준 암호화 키 파생 알고리즘
+
+
+
+
+로컬 PC에서 브라우저 접속 시
+https://오프라인PC-IP:4173
+↓
+브라우저: "신뢰할 수 없는 인증서" 경고 표시
+↓
+해결책:
+1) 경고 무시하고 진행 (번거로움)
+2) 루트 CA 신뢰하기 (추천)
+   npm run cert:trust:internal
+   또는 수동으로 sam-root-ca.cer 설치
+
+
+
+# 오프라인 PC에서 실행 (관리자 권한)
+cd offline-exe
+
+# .certs 폴더 생성
+New-Item -ItemType Directory ".certs" -Force -ErrorAction SilentlyContinue | Out-Null
+
+# PFX 파일 생성
+$cert = New-SelfSignedCertificate -Subject "CN=localhost" -KeyExportPolicy Exportable -CertStoreLocation "Cert:\CurrentUser\My"; Export-PfxCertificate -Cert $cert -FilePath ".certs\sam-server.pfx" -Password (ConvertTo-SecureString "changeit" -AsPlainText -Force) -Force
+
+# 확인
+ls .certs\sam-server.pfx   

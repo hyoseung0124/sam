@@ -1,0 +1,897 @@
+[2026-07-03 14:30:48.11] Starting server-access-manager...
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m4173[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2026-07-03 14:46:47.18] Starting server-access-manager...
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: c:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-03 14:48:06.29] Starting server-access-manager...
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-03 15:08:29.59] Starting server-access-manager...
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-03 15:29:20.39] Starting server-access-manager...
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-03 15:34:59.36] Starting server-access-manager...
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+[2026-07-03 15:38:58.89] Process exited with code 1.
+[2026-07-03 15:39:15.59] Starting server-access-manager...
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: c:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-03 15:52:50.62] Starting server-access-manager...
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-03 15:57:39.82] Starting server-access-manager...
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-03 16:13:40.41] Starting server-access-manager...
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-03 16:20:37.30] Starting server-access-manager...
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-03 16:33:04.52] Starting server-access-manager...
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-03 17:09:53.65] Starting server-access-manager...
+[2026-07-03 17:09:54.07] INFO: Port 4173 is already in use. Skip starting duplicate process.
+[2026-07-03 17:13:25.84] Starting server-access-manager...
+[2026-07-03 17:13:26.56] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 17 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.47 kB │ gzip:  0.30 kB
+dist/assets/index-BnziZS4V.css    6.40 kB │ gzip:  2.29 kB
+dist/assets/index-DzljI1Wk.js   206.64 kB │ gzip: 65.18 kB
+
+[32m✓ built in 344ms[39m
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-03 17:17:55.86] Starting server-access-manager...
+[2026-07-03 17:17:56.87] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 17 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.47 kB │ gzip:  0.30 kB
+dist/assets/index-BnziZS4V.css    6.40 kB │ gzip:  2.29 kB
+dist/assets/index-DzljI1Wk.js   206.64 kB │ gzip: 65.18 kB
+
+[32m✓ built in 502ms[39m
+Server Access Manager running at http://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+[2026-07-03 17:23:05.98] Process exited with code -1.
+[2026-07-06  9:00:28.83] Starting server-access-manager...
+[2026-07-06  9:00:30.14] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 17 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.47 kB │ gzip:  0.30 kB
+dist/assets/index-CzwRdglO.css    6.53 kB │ gzip:  2.31 kB
+dist/assets/index-B9ncGtC4.js   206.22 kB │ gzip: 65.01 kB
+
+[32m✓ built in 429ms[39m
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-06 10:05:20.28] Starting server-access-manager...
+[2026-07-06 10:05:21.22] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 17 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.47 kB │ gzip:  0.30 kB
+dist/assets/index-CzwRdglO.css    6.53 kB │ gzip:  2.31 kB
+dist/assets/index-BbnKLKR6.js   206.20 kB │ gzip: 64.99 kB
+
+[32m✓ built in 812ms[39m
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-06 14:03:32.59] Starting server-access-manager...
+[2026-07-06 14:03:34.65] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 17 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.47 kB │ gzip:  0.30 kB
+dist/assets/index-DYZvqioA.css    6.76 kB │ gzip:  2.39 kB
+dist/assets/index-7Yydp8O6.js   207.57 kB │ gzip: 65.31 kB
+
+[32m✓ built in 492ms[39m
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-07  9:01:08.73] Starting server-access-manager...
+[2026-07-07  9:01:10.27] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1107 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.47 kB │ gzip:   0.30 kB
+dist/assets/index-g1IeLNKA.css    7.54 kB │ gzip:   2.55 kB
+dist/assets/index-jc_szyY8.js   933.61 kB │ gzip: 282.84 kB
+
+[32m✓ built in 826ms[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-08  8:57:48.41] Starting server-access-manager...
+[2026-07-08  8:57:49.05] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1107 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.47 kB │ gzip:   0.30 kB
+dist/assets/index-CUnNyaMs.css    8.08 kB │ gzip:   2.68 kB
+dist/assets/index-DNop1GE9.js   946.33 kB │ gzip: 285.66 kB
+
+[32m✓ built in 475ms[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-08 14:08:55.95] Starting server-access-manager...
+[2026-07-08 14:08:58.15] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1107 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.47 kB │ gzip:   0.30 kB
+dist/assets/index-CUnNyaMs.css    8.08 kB │ gzip:   2.68 kB
+dist/assets/index-DNop1GE9.js   946.33 kB │ gzip: 285.66 kB
+
+[32m✓ built in 605ms[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-08 16:42:30.16] Starting server-access-manager HTTPS mode...
+[2026-07-08 16:42:30.85] Building latest source...
+^C[2026-07-09  9:04:27.03] Starting server-access-manager HTTPS mode...
+[2026-07-09  9:04:27.47] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1384 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.47 kB │ gzip:   0.30 kB
+dist/assets/index-CUnNyaMs.css    8.08 kB │ gzip:   2.68 kB
+dist/assets/index-KDdzhB8y.js   951.61 kB │ gzip: 287.59 kB
+
+[32m✓ built in 717ms[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-09 15:18:10.30] Starting server-access-manager...
+[2026-07-09 15:18:10.99] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-eMFlOBWt.css      8.08 kB │ gzip:   2.68 kB
+dist/assets/index-Ddnk0kgz.js   1,378.53 kB │ gzip: 429.96 kB
+
+[32m✓ built in 1.10s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-09 15:26:18.47] Starting server-access-manager HTTPS mode...
+[2026-07-09 15:26:18.88] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-eMFlOBWt.css      8.08 kB │ gzip:   2.68 kB
+dist/assets/index-Ddnk0kgz.js   1,378.53 kB │ gzip: 429.96 kB
+
+[32m✓ built in 1.30s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-09 15:49:08.13] Starting server-access-manager HTTPS mode...
+[2026-07-09 15:49:08.50] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-DXJbXanR.css      8.22 kB │ gzip:   2.72 kB
+dist/assets/index-gQSHU1B7.js   1,382.33 kB │ gzip: 430.36 kB
+
+[32m✓ built in 1.24s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-09 15:57:26.46] Starting server-access-manager HTTPS mode...
+[2026-07-09 15:57:26.81] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-BvpzMO5U.css      8.23 kB │ gzip:   2.73 kB
+dist/assets/index-Do-8sisO.js   1,382.31 kB │ gzip: 430.36 kB
+
+[32m✓ built in 1.82s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-10  8:58:40.98] Starting server-access-manager HTTPS mode...
+[2026-07-10  8:58:41.26] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-otYsDfNU.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-DdXi0dRu.js   1,383.32 kB │ gzip: 430.58 kB
+
+[32m✓ built in 569ms[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-10  9:21:51.41] Starting server-access-manager HTTPS mode...
+[2026-07-10  9:21:51.97] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 15 modules transformed.
+[31m✗[39m Build failed in 403ms
+[31merror during build:
+[31mBuild failed with 1 error:
+
+[31m[builtin:vite-transform] [0mUnterminated string
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/App.jsx:528:19 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m528 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m+[0m[38;5;249m [0m'새로운 파일을 생성할까요?
+ [38;5;240m    │[0m                   ──────────────┬────────────  
+ [38;5;240m    │[0m                                 ╰────────────── 
+[38;5;246m─────╯[0m
+[31m
+    at aggregateBindingErrorsIntoJsError (file:///C:/dev/server-access-manager/node_modules/rolldown/dist/shared/error-BlQ0-ek7.mjs:48:18)
+    at unwrapBindingResult (file:///C:/dev/server-access-manager/node_modules/rolldown/dist/shared/error-BlQ0-ek7.mjs:18:128)
+    at #build (file:///C:/dev/server-access-manager/node_modules/rolldown/dist/shared/rolldown-build-aV0QeeTW.mjs:3256:34)
+    at async buildEnvironment (file:///C:/dev/server-access-manager/node_modules/vite/dist/node/chunks/node.js:32622:66)
+    at async Object.build (file:///C:/dev/server-access-manager/node_modules/vite/dist/node/chunks/node.js:33044:19)
+    at async Object.buildApp (file:///C:/dev/server-access-manager/node_modules/vite/dist/node/chunks/node.js:33041:153)
+    at async CAC.<anonymous> (file:///C:/dev/server-access-manager/node_modules/vite/dist/node/cli.js:777:3) {
+  errors: [Getter/Setter]
+}[39m
+[2026-07-10  9:21:51.97] ERROR: Build failed before HTTPS server start.
+[2026-07-10  9:26:38.34] Starting server-access-manager HTTPS mode...
+[2026-07-10  9:26:38.64] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-otYsDfNU.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-CLS3OwGx.js   1,384.23 kB │ gzip: 430.82 kB
+
+[32m✓ built in 1.09s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-10 18:04:32.33] HTTPS process exited with code -1073741510.
+[2026-07-11  8:29:07.93] Starting server-access-manager HTTPS mode...
+[2026-07-11  8:29:08.25] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-otYsDfNU.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-2wfqeDB4.js   1,384.28 kB │ gzip: 430.84 kB
+
+[32m✓ built in 870ms[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-13  8:55:09.33] Starting server-access-manager HTTPS mode...
+[2026-07-13  8:55:12.89] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-otYsDfNU.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-2wfqeDB4.js   1,384.28 kB │ gzip: 430.84 kB
+
+[32m✓ built in 1.01s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+[2026-07-13  9:34:41.86] Starting server-access-manager HTTPS mode...
+[2026-07-13  9:34:42.95] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-otYsDfNU.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-2wfqeDB4.js   1,384.28 kB │ gzip: 430.84 kB
+
+[32m✓ built in 1.19s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+[2026-07-13 10:50:13.77] Starting server-access-manager HTTPS mode...
+[2026-07-13 10:50:15.06] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-otYsDfNU.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-2wfqeDB4.js   1,384.28 kB │ gzip: 430.84 kB
+
+[32m✓ built in 5.56s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-13 12:37:11.97] Starting server-access-manager HTTPS mode...
+[2026-07-13 12:37:13.03] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-otYsDfNU.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-a4pD9kZr.js   1,384.59 kB │ gzip: 430.97 kB
+
+[32m✓ built in 1.44s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-13 14:48:37.78] Starting server-access-manager HTTPS mode...
+[2026-07-13 14:48:38.26] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-otYsDfNU.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-a4pD9kZr.js   1,384.59 kB │ gzip: 430.97 kB
+
+[32m✓ built in 2.32s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-13 15:11:46.18] Starting server-access-manager HTTPS mode...
+[2026-07-13 15:11:46.50] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-otYsDfNU.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-ClCuqAtR.js   1,384.57 kB │ gzip: 430.96 kB
+
+[32m✓ built in 981ms[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-13 16:16:29.63] Starting server-access-manager HTTPS mode...
+[2026-07-13 16:16:29.92] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-BqTDzpsG.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-CBN66ze1.js   1,384.57 kB │ gzip: 430.96 kB
+
+[32m✓ built in 693ms[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-14  8:58:50.51] Starting server-access-manager HTTPS mode...
+[2026-07-14  8:58:51.43] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-BqTDzpsG.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-CBN66ze1.js   1,384.57 kB │ gzip: 430.96 kB
+
+[32m✓ built in 942ms[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+[2026-07-14  9:42:26.58] Starting server-access-manager HTTPS mode...
+[2026-07-14  9:42:29.08] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-BqTDzpsG.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-CBN66ze1.js   1,384.57 kB │ gzip: 430.96 kB
+
+[32m✓ built in 3.73s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-14  9:55:27.22] Starting server-access-manager HTTPS mode...
+[2026-07-14  9:55:28.00] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-BqTDzpsG.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-CBN66ze1.js   1,384.57 kB │ gzip: 430.96 kB
+
+[32m✓ built in 1.32s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-14 14:43:37.02] Starting server-access-manager...
+[2026-07-14 14:43:38.18] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-BqTDzpsG.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-CBN66ze1.js   1,384.57 kB │ gzip: 430.96 kB
+
+[32m✓ built in 2.27s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-14 14:46:10.14] Starting server-access-manager...
+[2026-07-14 14:46:10.81] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-BqTDzpsG.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-CBN66ze1.js   1,384.57 kB │ gzip: 430.96 kB
+
+[32m✓ built in 1.09s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-14 14:48:53.60] Starting server-access-manager...
+[2026-07-14 14:48:55.95] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-BqTDzpsG.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-CBN66ze1.js   1,384.57 kB │ gzip: 430.96 kB
+
+[32m✓ built in 1.41s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-14 14:50:14.70] Starting server-access-manager...
+[2026-07-14 14:50:15.40] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-BqTDzpsG.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-CBN66ze1.js   1,384.57 kB │ gzip: 430.96 kB
+
+[32m✓ built in 1.16s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-14 14:50:42.11] Starting server-access-manager...
+[2026-07-14 14:50:42.88] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-BqTDzpsG.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-CBN66ze1.js   1,384.57 kB │ gzip: 430.96 kB
+
+[32m✓ built in 1.48s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-14 14:52:11.82] Starting server-access-manager...
+[2026-07-14 14:52:12.73] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-BqTDzpsG.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-CBN66ze1.js   1,384.57 kB │ gzip: 430.96 kB
+
+[32m✓ built in 1.11s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+'ort'��(��) ���� �Ǵ� �ܺ� ����, ������ �� �ִ� ���α׷�, �Ǵ�
+��ġ ������ �ƴմϴ�.
+Server Access Manager running at http://127.0.0.1:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+^C[2026-07-14 14:55:52.71] Starting server-access-manager HTTPS mode...
+[2026-07-14 14:55:53.91] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-BqTDzpsG.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-CBN66ze1.js   1,384.57 kB │ gzip: 430.96 kB
+
+[32m✓ built in 1.87s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-14 14:57:04.81] Starting server-access-manager HTTPS mode...
+[2026-07-14 14:57:05.78] Building latest source...
+
+> server-access-manager@0.0.0 build
+> vite build
+
+[36mvite v8.1.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 1385 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.46 kB │ gzip:   0.32 kB
+dist/assets/index-BqTDzpsG.css      8.88 kB │ gzip:   2.91 kB
+dist/assets/index-CBN66ze1.js   1,384.57 kB │ gzip: 430.96 kB
+
+[32m✓ built in 1.75s[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+Server Access Manager running at https://0.0.0.0:4173/
+Data file: C:\dev\server-access-manager\data\server-access-items.json
+HTTPS mode enabled
+^C[2026-07-16 17:10:30.20] Starting server-access-manager HTTPS mode without build...
+Server Access Manager running at https://0.0.0.0:4173/
+HTTPS mode enabled
+^C[2026-07-16 17:13:41.95] Starting server-access-manager HTTPS mode without build...
+[2026-07-16 17:16:19.75] Starting server-access-manager HTTPS mode without build...
+[2026-07-16 17:17:49.70] Starting server-access-manager HTTPS mode without build...
+[2026-07-16 17:19:28.63] Starting server-access-manager HTTPS mode without build...
+[2026-07-16 17:20:45.86] Starting server-access-manager HTTPS mode without build...
+[2026-07-16 17:22:22.55] Starting server-access-manager HTTPS mode without build...
+[2026-07-16 17:22:56.50] Starting server-access-manager HTTPS mode without build...
+[2026-07-20  9:04:49.25] Starting server-access-manager HTTPS mode without build...
+[2026-07-20 10:55:16.88] Starting server-access-manager HTTPS mode without build...
+[2026-07-20 18:17:54.93] HTTPS process exited with code -1073741510.
+[2026-07-21  9:03:29.17] Starting server-access-manager HTTPS mode without build...
+[2026-07-21 12:11:54.49] Starting server-access-manager HTTPS mode without build...
+[2026-07-21 12:14:46.53] Starting server-access-manager HTTPS mode without build...
+[2026-07-21 12:18:19.83] HTTPS process exited with code -1073741510.
+[2026-07-21 12:20:44.92] Starting server-access-manager HTTPS mode without build...
+[2026-07-22  8:59:17.47] Starting server-access-manager HTTPS mode without build...
+[2026-07-22 11:26:43.81] Starting server-access-manager HTTPS mode without build...
+[2026-07-22 11:26:44.26] INFO: Port 4173 is already in use. Stop existing process before HTTPS start.
+[2026-07-22 11:27:17.11] Starting server-access-manager HTTPS mode without build...
+[2026-07-22 16:44:07.07] Starting server-access-manager HTTPS mode without build...
+[2026-07-22 16:44:08.27] INFO: Port 4173 is already in use. Stop existing process before HTTPS start.
+[2026-07-22 17:03:53.19] Starting server-access-manager HTTPS mode without build...
+[2026-07-22 17:03:54.08] INFO: Port 4173 is already in use. Stop existing process before HTTPS start.
+[2026-07-22 17:05:43.35] Starting server-access-manager HTTPS mode without build...
+[2026-07-23  8:59:59.06] Starting server-access-manager HTTPS mode without build...
+[2026-07-24  9:04:15.90] Starting server-access-manager HTTPS mode without build...
+[2026-07-24 12:25:07.55] Starting server-access-manager HTTPS mode without build...
+[2026-07-24 13:47:43.97] Starting server-access-manager HTTPS mode without build...
+[2026-07-24 13:47:44.42] INFO: Port 4173 is already in use. Stop existing process before HTTPS start.
+[2026-07-24 13:48:08.95] Starting server-access-manager HTTPS mode without build...
+[2026-07-24 14:56:07.13] Starting server-access-manager HTTPS mode without build...
+[2026-07-24 15:00:19.70] Starting server-access-manager HTTPS mode without build...
+[2026-07-24 15:23:03.19] Starting server-access-manager HTTPS mode without build...
+[2026-07-24 15:26:13.52] Starting server-access-manager HTTPS mode without build...
+[2026-07-24 15:31:20.83] Starting server-access-manager HTTPS mode without build...
+[2026-07-24 16:36:04.94] Starting server-access-manager HTTPS mode without build...
+[2026-07-24 16:49:30.60] Starting server-access-manager HTTPS mode without build...
+[2026-07-24 16:50:16.21] Starting server-access-manager HTTPS mode without build...
+[2026-07-24 16:50:16.71] INFO: Port 4173 is already in use. Stop existing process before HTTPS start.
+[2026-07-24 16:54:30.63] Starting server-access-manager HTTPS mode without build...
+[2026-07-24 17:04:15.35] Starting server-access-manager HTTPS mode without build...
+[2026-07-24 17:06:12.73] Starting server-access-manager HTTPS mode without build...
+[2026-07-27  9:00:46.08] Starting server-access-manager HTTPS mode without build...
+[2026-07-27 18:17:15.42] HTTPS process exited with code -1073741510.
+[2026-07-27 18:17:46.10] Starting server-access-manager HTTPS mode without build...
+[2026-07-27 18:22:50.48] Starting server-access-manager HTTPS mode without build...
+[2026-07-28  9:03:17.11] Starting server-access-manager HTTPS mode without build...
+[2026-07-29  8:57:41.44] Starting server-access-manager HTTPS mode without build...
+[2026-07-30  9:01:02.94] Starting server-access-manager HTTPS mode without build...
+[2026-07-30 12:51:01.62] Starting server-access-manager HTTPS mode without build...
+[2026-07-31  8:58:40.07] Starting server-access-manager HTTPS mode without build...
+[2026-08-04  8:57:43.70] Starting server-access-manager HTTPS mode without build...
+[2026-08-05  8:57:25.63] Starting server-access-manager HTTPS mode without build...
+[2026-08-06  9:03:06.79] Starting server-access-manager HTTPS mode without build...
+[2026-08-07  8:58:52.06] Starting server-access-manager HTTPS mode without build...
+[2026-08-10  8:59:28.39] Starting server-access-manager HTTPS mode without build...
+[2026-08-11  8:55:16.38] Starting server-access-manager HTTPS mode without build...
+[2026-08-11 15:42:07.45] Starting server-access-manager HTTPS mode without build...
+[2026-08-12  8:56:32.45] Starting server-access-manager HTTPS mode without build...
+[2026-08-13  8:59:44.65] Starting server-access-manager HTTPS mode without build...
+[2026-08-14  9:00:25.95] Starting server-access-manager HTTPS mode without build...
+[2026-08-18  8:58:01.31] Starting server-access-manager HTTPS mode without build...
+[2026-08-19  9:09:04.45] Starting server-access-manager HTTPS mode without build...
+[2026-08-20  9:01:31.37] Starting server-access-manager HTTPS mode without build...
+[2026-08-21  9:01:36.30] Starting server-access-manager HTTPS mode without build...
+[2026-08-25  9:01:21.25] Starting server-access-manager HTTPS mode without build...
+[2026-08-26  9:03:00.85] Starting server-access-manager HTTPS mode without build...
+[2026-08-27  8:58:25.10] Starting server-access-manager HTTPS mode without build...
+[2026-08-28  9:05:26.78] Starting server-access-manager HTTPS mode without build...
+[2026-08-31  8:58:13.23] Starting server-access-manager HTTPS mode without build...
+[2026-09-01  8:57:14.38] Starting server-access-manager HTTPS mode without build...
+[2026-09-02  9:02:54.90] Starting server-access-manager HTTPS mode without build...
+[2026-09-03  9:01:57.74] Starting server-access-manager HTTPS mode without build...
+[2026-09-04  9:06:45.43] Starting server-access-manager HTTPS mode without build...
+[2026-09-07  9:02:14.75] Starting server-access-manager HTTPS mode without build...

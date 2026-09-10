@@ -1,0 +1,18 @@
+
+다운로드 받은 offline-exe.zip 파일을 압축해제 후
+prepare-offline-exe-package.bat 실행
+
+edge or chorme 브라우저에서
+http://localhost:4173 접속
+
+
+--부팅시 자동 서버 자동실행
+1.Win + R 누르고 아래 입력
+shell:startup
+
+2.바로가기 만들기
+대상 파일: run-server-access-manager-exe.bat
+
+3. 만든 바로가기 파일을 Startup 폴더에 넣으면 부팅 후 실행됩니다.
+
+4. 콘솔 창 서버구동 확인 후 http://localhost:4173 접속

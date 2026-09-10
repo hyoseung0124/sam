@@ -1,0 +1,15 @@
+#UID 확인하는방법
+
+
+$Token = "여기에_토큰"
+
+$Headers = @{
+    Authorization = "Bearer $Token"
+}
+
+$result = Invoke-RestMethod `
+    -Uri "https://api.vercel.com/v6/deployments" `
+    -Headers $Headers
+
+$result.deployments |
+Select-Object uid, name, url, state
